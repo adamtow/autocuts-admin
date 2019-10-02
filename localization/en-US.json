@@ -1,5 +1,6 @@
 {
-	"English": {
+	"en-US": {
+		"name": "English",
 		"alert_about": "Create, manage, and view the shortcuts that will automatically run via Autocuts as you use your iOS device.",
 		"alert_donate": "Thank you for donating and supporting my Shortcuts development!",
 		"alert_update_none": "You are running the latest version of this shortcut.",
@@ -13,6 +14,7 @@
 		"label_advanced": "Advanced",
 		"label_tools": "Tools",
 		"label_thisDevice": "This Device",
+		"label_seconds": "seconds",
 		"menu_about": "About...",
 		"menu_back": "Back...",
 		"menu_help": "Help...",
@@ -69,6 +71,10 @@
 		"menu_settings_debugLevel": "Debug Level",
 		"menu_settings_dropboxPath": "Dropbox Path...",
 		"menu_settings_language": "Change Language...",
+		"menu_settings_limitkit": "Use LimitKit",
+		"menu_settings_limitkitInterval": "LimitKit Interval...",
+		"menu_settings_log": "Log Activity",
+		"menu_settings_notify": "Notify After Evaluation",
 		"menu_settings_reset": "Reset...", 
 		"menu_settings_expiration": "Default Expiration Time...",
 		"menu_settings_update": "Check for Updates...",
@@ -98,9 +104,10 @@
 		"prompt_input_location": "Enter an address that will be sent to the shortcut when it runs",
 		"prompt_option_schedule": "When do you want the Autocut to run?",
 		"prompt_option_scheduleCustom": "Choose a custom date for your Autocut?",
+		"prompt_limitkit_interval": "Enter the number of seconds to wait before Autocuts can run again:",
 		"prompt_list": "Displaying files in {{dropboxPath}}\n\n.Choose an Autocut:",
 		"prompt_list_delete": "Select files to delete.",
-		"prompt_option_expiration": "Enter a number (in minutes) that determines how much time can pass before an Autocut expires and will not run.\n\nEnter -1 if you do not want your Autocut to expire after running.",
+		"prompt_option_expiration": "Enter the number of minutes that can pass after the scheduled date of the Autocut before it expires and will not run.\n\nEnter 0 to run and expire the shortcut whenever Autocuts runs.\n\nEnter -1 if you do not want your Autocut to expire after running.",
 		"prompt_option_device": "Do you want to restrict running this Autocut on a particular iOS device?",
 		"prompt_option_deviceName": "Enter the name of the iOS device on which this Autocut will run.\n\nYou can find the device name in Settings > General > About > Name",
 		"prompt_option_continueInShortcuts": "Run the shortcut in the background or open the Shortcuts app before running?\n\nNOTE: Some shortcuts require the Shortcuts app to be the active application in order to run properly.",
