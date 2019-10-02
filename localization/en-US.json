@@ -80,6 +80,8 @@
 		"menu_settings_update": "Check for Updates...",
 		"menu_schedule_now": "Run Now",
 		"menu_schedule_custom": "Custom Date...",
+		"menu_source_shortcutsAllowAll": "Allow All Shortcuts",
+		"menu_source_shortcutsChoose": "Choose Allowed Shortcuts...",
 		"menu_update_confirm": "Update Now...",
 		"menu_update_cancel": "Update Later",
 		"menu_yes": "Yes",
@@ -118,6 +120,11 @@
 		"prompt_service_dropbox": "Enter the path in Dropbox where Autocuts will be stored:",
 		"prompt_service_ifttt_event": "Enter the event name for the IFTTT Webhook:",
 		"prompt_service_ifttt_apikey": "Enter the IFTTT Webhook API Key:",
-		"prompt_service_zapier": "Enter the URL for the Zapier Webhook:"
+		"prompt_service_zapier": "Enter the URL for the Zapier Webhook:",
+		"prompt_source_dropboxPath": "Enter the path to the Autocuts source folder on Dropbox",
+		"prompt_source_shortcuts": "Should Autocuts in this source be allowed to run any shortcut on this device or select ones?",
+		"prompt_source_shortcutsChoose": "Select the shortcuts that Autocuts in this source can run:",
+		"prompt_source_name": "Enter the name for this source:"
+		
 	}
 }
