@@ -17,6 +17,7 @@
 		"label_seconds": "seconds",
 		"menu_about": "About...",
 		"menu_back": "Back...",
+		"menu_cancel": "Cancel",
 		"menu_help": "Help...",
 		"menu_delete_confirm": "Delete",
 		"menu_delete_cancel": "Don't Delete",
