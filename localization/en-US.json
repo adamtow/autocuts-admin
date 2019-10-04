@@ -146,7 +146,7 @@
         "prompt_option_continueInShortcuts": "Run the shortcut in the background or open the Shortcuts app before running?\n\nNOTE: Some shortcuts require the Shortcuts app to be the active application in order to run properly.",
         "prompt_option_device": "Allow this Autocut to run on any device or restrict to a named iOS device?",
         "prompt_option_deviceName": "Enter the name of the iOS device on which this Autocut will run.\n\nYou can find the device name in Settings > General > About > Name",
-        "prompt_option_expiration": "Enter the number of minutes that can pass after an Autocut's scheduled date before it expires and will not run.\n\nEnter 0 to run and expire the shortcut whenever Autocuts runs.\n\nEnter -1 to specify a repeating and non-expiring Autocut.",
+        "prompt_option_expiration": "Set the default expiration time for new Autocuts.\n\n-1 - repeating and non-expiring\n\n0 - run and expire\n\n> 0 - Autocut will expire and not run its shortcut after specified number of minutes.",
         "prompt_option_schedule": "When do you want this Autocut to become available for running?",
         "prompt_option_scheduleCustom": "Choose a custom date for your Autocut?",
         "prompt_reset": "Reset Autocuts settings or erase all content and settings for Autocuts?",
