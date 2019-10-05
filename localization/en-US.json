@@ -71,7 +71,7 @@
         "menu_general": "General",
         "menu_help": "Help...",
         "menu_input_askShortcut": "Custom from Shortcut...",
-        "menu_input_askShortcut_confirm": "Yes, Make the Call...",
+        "menu_input_askShortcut_confirm": "Ask Shortcut for Input...",
         "menu_input_askShortcut_cancel": "Cancel",
         "menu_input_date": "Date",
         "menu_input_datetime": "Date and Time",
