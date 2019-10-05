@@ -2,7 +2,7 @@
 	"en-US": {
         "alert_about": "Create, manage, and view the shortcuts that will automatically run via Autocuts as you use your iOS device.",
         "alert_donate": "Thank you for donating and supporting my Shortcuts development!",
-        "alert_help_advanced": "",
+        "alert_help_advanced": "Visit Autocuts Admin's Settings page for additional options for controlling Autocuts.\n\n• Verify Shortcuts: When checked, Autocuts Admin will generate a list of shortcuts that Autocuts will match against when running. If a shortcut does not exist, it will not run.\n\n• Log Activity: Autocuts will write a log file of its activity in iCloud Drive > Shortcuts > Autocuts > log-{devicename}.txt.\n\n• Notify After Evaluation: When run, Autocuts will display the current log file after evaluating your Autocuts but before running the shortcuts.",
         "alert_help_advanced_title": "Advanced",
         "alert_help_limitkit": "By default, the Open App personal automation will cause Autocuts to run every time you open one of your apps.\n\nLimitKit allows you to control the frequency at which Autocuts will evaluate your Autocuts in your Dropbox sources.\n\nFor example, you can configure Autocuts to run every minute, five minutes, thirty minutes, or hour. \n\nWhen its time limit has not elapsed, Autocuts will exit much more quickly when run from the Open App personal automation, preserving battery life. ",
         "alert_help_limitkit_title": "LimitKit",
