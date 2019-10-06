@@ -68,6 +68,8 @@
         "menu_autocut_date": "Date",
         "menu_autocut_delete": "Delete Autocut...",
         "menu_autocut_device": "Device",
+        "menu_autocut_disable": "Disable",
+        "menu_autocut_enable": "Enable",
         "menu_autocut_expiration": "Expiration",
         "menu_autocut_input": "Input",
         "menu_autocut_run": "Run Shortcut...",
