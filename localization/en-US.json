@@ -28,7 +28,7 @@
         "alert_source_shortcutsNone": "There are no allowed shortcuts defined for this source.",
         "alert_update_none": "You are running the latest version of Autocuts Admin.",
         "alert_update_none_title": "No Update Avaiable",
-        "alert_welcome": "Autocuts automatically runs shortcuts in the background while you normally use your iOS device.\n\nConfigure how Autocuts operates using the Autocuts Admin shortcut.",
+        "alert_welcome": "Autocuts automatically runs shortcuts in the background while you use your iOS device.\n\nConfigure how Autocuts operates using the Autocuts Admin shortcut.",
         "alert_welcome_title": "Welcome to Autocuts!",
         "error_autocut_invalid": "This file is not a valid Autocut.",
         "error_autocut_notFound": "The Autocut could not be found.",
