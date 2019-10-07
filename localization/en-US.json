@@ -52,6 +52,7 @@
         "label_expiration_run": "When Run",
         "label_foreground": "Foreground",
         "label_input": "• • •",
+        "label_minute": "minute",
         "label_minutes": "minutes",
         "label_option_activate": "↗️",
         "label_option_device": "📱",
@@ -181,8 +182,8 @@
         "prompt_delete_multiple": "Delete the selected Autocuts? This operation cannot be undone.",
         "prompt_donate": "Enjoying Autocuts? Send me a tip to help fund future development of Autocuts and other shortcuts.",
         "prompt_path": "Path where Autocut entries are located.",
-        "prompt_erase_content": "Are you sure you want to delete all Autocuts content and settings for this device?\n\nThis operation cannot be undone.",
-        "prompt_erase_content2": "Are you ABSOLUTELY SURE you want to delete all Autocuts  content and settings for this device?\n\nThis operation cannot be undone.",
+        "prompt_erase_content": "Are you sure you want to delete all Autocuts content and settings for this device?\n\nNote: Autocut files in source directories will not be deleted, but references to your source folders will be removed.\n\nThis operation cannot be undone.",
+        "prompt_erase_content2": "Are you ABSOLUTELY SURE you want to delete all Autocuts  content and settings for this device?\n\nNote: Autocut files in source directories will not be deleted, but references to your source folders will be removed.\n\nThis operation cannot be undone.",
         "prompt_help": "Autocuts Help",
         "prompt_input": "Choose data that you would like to send to the shortcut when run.",
         "prompt_input_askShortcut": "Autocuts will call {{shortcut}} with \"Autocuts Custom Input\". Confirm that the shortcut will display custom UI for providing input for this Autocut.",
@@ -227,6 +228,5 @@
         "prompt_source_shortcutsChoose": "Select the shortcuts that Autocuts in this source can run:",
         "prompt_source_shortcutsRemove": "Select shortcuts to remove from the list of allowed shortcuts.",
         "prompt_update": "Autocuts {{version}} is available. Would you like to download it now?\n\nRelease Notes\n{{notes}}"
-}
-
+        }
 }
