@@ -186,7 +186,7 @@
         "prompt_bulkEdit": "With selected Autocuts:",
         "prompt_delete": "Delete this Autocut? This operation cannot be undone.",
         "prompt_delete_multiple": "Delete the selected Autocuts? This operation cannot be undone.",
-        "prompt_donate": "Enjoying Autocuts? Send me a tip to help fund future development of Autocuts and other shortcuts.",
+        "prompt_donate": "Has Autocuts been helpful in automatically running shortcuts in the background?\n\nSend me a tip to help fund future development of Autocuts and other shortcuts.",
         "prompt_path": "Path where Autocut entries are located.",
         "prompt_erase_content": "Are you sure you want to delete all Autocuts content and settings for this device?\n\nNote: Autocut files in source directories will not be deleted, but references to your source folders will be removed.\n\nThis operation cannot be undone.",
         "prompt_erase_content2": "Are you ABSOLUTELY SURE you want to delete all Autocuts  content and settings for this device?\n\nNote: Autocut files in source directories will not be deleted, but references to your source folders will be removed.\n\nThis operation cannot be undone.",
