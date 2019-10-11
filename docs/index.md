@@ -69,25 +69,40 @@ With Autocuts Admin, you can create, manage, and view all shortcuts that are sch
 ## Getting Started
 "To run your shortcuts automatically, Autocuts must be configured to run each time you open your most commonly used apps.
 
-1. Tap Automation in Shortcuts.
-2. Tap the + button.
-3. Tap Create Personal Automation
-4. Choose Open App
-5. Select the apps you use often and tap Done. 
-6. Autocuts Setup Tap Add a Run Shortcut action and set it to Autocuts.
-7. Tap Show More and disable Show While Running.
-8. Tap Next and disable Ask Before Running.\n\n12. Tap Done.",
+1. Tap **Automation** in Shortcuts.
+2. Tap the **+** button.
+3. Tap **Create Personal Automation**.
+4. Choose **Open App**.
+5. Select the apps you use often and tap **Done**. 
+6. Tap **Next**.
+7. Tap **Add Action**.
+8. Add a **Run Shortcut** action and set it to Autocuts.
+9. Tap **Show More** and disable **Show While Running**.
+10. Tap **Next** and disable **Ask Before Running**.
+11. Tap **Done**.
 
+Now, whenever you open one of your selected apps, Autocuts will run in the background.
 
-        "alert_help_setup3_title": "Autocuts Setup (3/4)",
-        "alert_help_setup4": "Now, whenever you open one of your selected apps, Autocuts will run in the background.\n\nAutocuts created by Autocuts Admin or a Destination Service will be processed and their shortcuts run.\n\nYou can limit how often Autocuts performs its evaluation by installing LimitKit and configuring Autocut's LimitKit Interval in Settings.",
-        "alert_help_setup4_title": "Autocuts Setup (4/4)",
-        "alert_help_sources": "Autocut Sources are folders on iCloud Drive or Dropbox that hold your Autocut files. \n\nWhen you add a source to Autocuts using Autocuts Admin, any file whose filename begins with \"Autocut\" or \"autocut\" will be processed whenever Autocuts runs. \n\nIf an Autocut file is valid for the current time and has not expired, the shortcut specified in the Autocut will run. \n\nADVANCED\nSetting up shared Dropbox folders as Autocut sources will allow shortcuts to run automatically on remote iOS devices as their owners use them throughout the day.",
-        "alert_help_sources_title": "Autocut Sources",
-        "alert_help_troubleshooting": "Shortcut automation in iOS is a new and evolving technology. You may encounter the following issues when using Autocuts.\n\n• XPC connection to the extension was interrupted: It could be a temporary error on the part of iOS or one of the shortcuts you are trying to run may have experienced an error.\n\n• Your shortcuts do not run. Turn on Use Logs and Notify Activity in Autocuts Admin Settings to see exactly what's happening when Autocuts runs. Run Autocuts from the Shortcuts app and from an Open App automation to see if there's a reproducible difference.\n\n• You are offline: Autocuts does not evaluate Dropbox sources if you are not connected to the internet.\n\nRead the full documentation for more troubleshooting tips and tricks.",
+Autocuts created by Autocuts Admin or a Destination Service will be processed and their shortcuts run.
 
+You can limit how often Autocuts performs its evaluation by installing LimitKit and configuring Autocut's LimitKit Interval in Settings.
 
+### Sources
+Autocut Sources are folders on iCloud Drive or Dropbox that hold your Autocut files.
 
+When you add a source to Autocuts using Autocuts Admin, any file whose filename begins with "Autocut" or "autocut" will be processed whenever Autocuts runs.
 
+If an Autocut file is valid for the current time and has not expired, the shortcut specified in the Autocut will run.
+
+#### ADVANCED
+Setting up shared Dropbox folders as Autocut sources will allow shortcuts to run automatically on remote iOS devices as their owners use them throughout the day.
 
 ## Limitations
+Normally, Autocuts will not work unless you are actively using your phone throughout the day. If you want Autocuts to be running 24/7, you should create a shortcut that has a repeat loop calling Autocuts every 60 seconds. You should keep the Shortcuts app open. Switching to another application will likely terminate the shortcut, as Shortcuts in iOS 13 do not run very long on their own in the background.
+
+## Troubleshooting
+Shortcut automation in iOS is a new and evolving technology. You may encounter the following issues when using Autocuts.
+
+- **XPC connection to the extension was interrupted**: It could be a temporary error on the part of iOS or one of the shortcuts you are trying to run may have experienced an error.
+- **Your shortcuts do not run**: Turn on Use Logs and Notify Activity in Autocuts Admin Settings to see exactly what's happening when Autocuts runs. Run Autocuts from the Shortcuts app and from an Open App automation to see if there's a reproducible difference.
+- **You are offline**: Autocuts does not evaluate Dropbox sources if you are not connected to the internet.
