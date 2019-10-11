@@ -103,6 +103,15 @@ If an Autocut file is valid for the current time and has not expired, the shortc
 #### ADVANCED
 Setting up shared Dropbox folders as Autocut sources will allow shortcuts to run automatically on remote iOS devices as their owners use them throughout the day.
 
+
+## Settings
+To modify settings for both Autocuts and Autocuts Admin, tap Settings from the Autocuts Admin Home screen.
+
+![Autocuts Admin Settings](https://adamtow.github.io/autocuts-admin/images/autocuts-settings.png)
+
+
+
+
 ## Limitations
 Normally, Autocuts will not work unless you are actively using your phone throughout the day. If you want Autocuts to be running 24/7, you should create a shortcut that has a repeat loop calling Autocuts every 60 seconds. You should keep the Shortcuts app open. Switching to another application will likely terminate the shortcut, as Shortcuts in iOS 13 do not run very long on their own in the background.
 
