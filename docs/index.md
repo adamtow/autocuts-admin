@@ -1,24 +1,25 @@
 
 # Autocuts
-Autocuts is a background shortcut manager for iOS 13. It runs silently behind the scenes while you use your iOS device throughout the day, intelligently running shortcuts in the background based on triggers such as time, location, web activity and more. Best of all, it executes your shortcuts with absolutely zero tapping on confirmation buttons. 
+Autocuts is a background shortcut manager for iOS 13. It runs behind the scenes while you use your iOS device throughout the day, intelligently running shortcuts in the background based on triggers such as time, location, web activity and more. Best of all, it executes these shortcuts without you having to tap on a single confirmation button.
 
-For those who have wanted Personal Automations in iOS 13 to be a little more, say, automated, Autocuts is the shortcut you need to use!
+For those of you who have wanted Personal Automations in iOS 13 to be a little more, say, automated, Autocuts is a must-have addition to your shortcut collection!
 
 ## Requirements, Download and Installation
-
 Autocuts is part of the **Autocuts Suite** set of automation shortcuts for iOS:
 
 [Download Autocuts Suite Installer from RoutineHub.co &raquo;](https://routinehub.co/shortcut/3661)
 
-- **Autocuts**: the background shortcut that runs continually as you use your iOS device via the Open App personal automation feature of Shortcuts in iOS 13.1. 
+- **Autocuts**: the background shortcut manager that runs continually as you use your iOS device via the Open App personal automation feature of Shortcuts on iOS 13.1 and greater.
 - **Autocuts Admin**: the shortcut for creating, viewing, and managing your list of background shortcuts. 
-- **LimitKit**: an event logging and rate limiter for shortcuts. LimitKit allows you to limit the running of your shortcut to a pre-set cadence (e.g. once a minute, after 15 minutes, after two hours, after one week, etc.).
 - **Location Triggers**: shortcut that manages and runs all of your automatic, location-based shortcut triggers. 
+- **LimitKit**: an event logging and rate limiter for shortcuts. LimitKit allows you to set the run cadence of your shortcuts to a pre-set value (e.g. once a minute, after 15 minutes, after two hours, after one week, etc.).
 
-Autocuts Suite requires iOS 13.1 or higher. You will have to allow untrusted shortcuts from Settings &gt; Shortcuts in order to install any of these shortcuts.
+### System Requirements
+- Autocuts Suite requires iOS 13.1 or higher.
+- You must allow untrusted shortcuts from Settings &gt; Shortcuts in order to install any third-party shortcut such as Autocuts.
 
 ## How it works
-Autocuts takes advantage of the **Open App** personal automation feature of Shortcuts in iOS 13.1. By using your iOS device like you normally do throughout the day, Autocuts will be constantly running in the background, where it is responsible for running other shortcuts in the background. 
+Autocuts takes advantage of the **Open App** personal automation feature of Shortcuts in iOS 13.1. Simply using your iOS device normally during the day is enough to keep Autocuts constnatly running and continually monitoring for shortcuts that it needs to run in the background.
 
 You can also connect third-party web services such as IFTTT, Zapier, and Dropbox directly with your iOS device. A triggered event from the web can create an Autocut file that will automatically run a shortcut on your device. 
 
@@ -85,29 +86,27 @@ Follow these instructions to create your first Autocut:
 \
 ![Select a shortcut to run with your new Autocut](https://adamtow.github.io/autocuts-admin/images/new-autocut-1.png)\
 \
-&nbsp;
-4. If your shortcut requires input, select what you want to send it when the Autocut runs. If the shortcut supports Autocuts, you can tap **Custom from Shortcut** to be presented with custom UI from the shortcut to be used as input for the shortcut when Autocuts runs.
-5. Decide whether the shortcut can run in the background or if the Shortcuts app needs to be frontmost before running the shortcut.\
 \
-**NOTE**: *Not all shortcuts can run in the background, so please refer to this [section on writing background-aware shortcuts](#background).*\
+4. If your shortcut requires input, select what you want to send it when the Autocut runs. If the shortcut supports Autocuts, you can tap **Custom from Shortcut** to be presented with custom UI from the shortcut to be used as input for the shortcut when Autocuts runs.
+5. Decide whether the shortcut can run in the background or if the Shortcuts app needs to be frontmost before running the shortcut. **NOTE**: *Not all shortcuts can run in the background, so please refer to this [section on writing background-aware shortcuts](#background).*\
 \
 ![Enter the shortcut input, decide whether it can run in the background, and set the date it can first run](https://adamtow.github.io/autocuts-admin/images/new-autocut-2.png)\
 \
-&nbsp;
+
 6. Select the date and time when the Autocut will become active.
 7. Set an expiration time for the Autocut or set it to never expire. If you pass the expiration time for an Autocut, its shortcut will never run, and it will be deleted by Autocuts. 
 8. If you have LimitKit installed, you can set the run cadence for your shortcut. While Autocuts will run continuously, you may not want your shortcut to run every time. With LimitKit, you can have your shortcut wait at least X number of seconds, minutes, hours, days, weeks, months, or even years, before it can run again.\
 \
 ![Decide whether the AutoCut expires and its LimitKit run interval (optional)](https://adamtow.github.io/autocuts-admin/images/new-autocut-3.png)\
 \
-&nbsp;
+\
 9. Select an action that will occur when the Autocut successfully runs. You can disable the Autocut, reset it, delete it, or do nothing.
 10. Choose whether this Autocut will only run on the iOS device you're currently using, or whether it will run on any iOS device that has the Autocut. You can also specify a custom device name here. Autocuts with a device name restriction will not run on those devices that do not have the name defined in the Autocut.
-11. Name your Autocut. If you leave the name blank, the shortcut name will be display in Autocuts' interface.\
+11. Name your Autocut. If you leave the name blank, the shortcut name will be displayed in Autocuts' interface.\
 \
 ![Choose what happens after the shortcut runs successfully and restrict the shortcut to run on certain devices](https://adamtow.github.io/autocuts-admin/images/new-autocut-4.png)\
 \
-&nbsp;
+\
 12. Select a destination for your Autocut. You can send Autocuts to remote iOS devices and other users by taking advantage of [Destinations Services](#destinations).
 13. The Autocut will now be completed, and you will be taken to the Autocuts listing page. Tap on the Autocut to view the details that you just entered.
 
