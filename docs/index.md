@@ -81,6 +81,12 @@ With Autocuts Admin, you can create, manage, and view all shortcuts that are sch
 10. Tap **Next** and disable **Ask Before Running**.
 11. Tap **Done**.
 
+![Autocuts Setup #1](https://adamtow.github.io/autocuts-admin/images/autocuts-personal-automation-1.png)
+
+![Autocuts Setup #2](https://adamtow.github.io/autocuts-admin/images/autocuts-personal-automation-2.png)
+
+![Autocuts Setup #3](https://adamtow.github.io/autocuts-admin/images/autocuts-personal-automation-3.png)
+
 Now, whenever you open one of your selected apps, Autocuts will run in the background.
 
 Autocuts created by Autocuts Admin or a Destination Service will be processed and their shortcuts run.
