@@ -109,8 +109,24 @@ To modify settings for both Autocuts and Autocuts Admin, tap Settings from the A
 
 ![Autocuts Admin Settings](https://adamtow.github.io/autocuts-admin/images/autocuts-settings.png)
 
+### Verify Shortcuts
+If this setting is enabled, Autocuts will compare the shortcut it is trying to run with a pre-generated list of shortcuts. This list is automatically created whenever you launch the Autocuts Admin shortcut. If the shortcut does not exist on the device, Autocuts will skip over it. 
+
+If you are constantly adding and creating shortcuts, you should run Autocuts Admin periodically to regenerate the list of shortcuts. 
+
+If the setting is not enabled and Autocuts tries to launch a shortcut that does not exist, an error will occur and prevent any remaining Autocuts from running. 
+
+> Developer Note: Autocuts cannot use the Get My Shortcuts action to retrieve an updated list of shortcuts running in the background without iOS raising an error during a personal automation. 
+
+### Log Activity
+When enabled, Autocuts will write to a log file, detailing what it does during every evaluation. The log file is located in iCloud Drive in the Shortcuts/Autocuts folder. 
+
+### Notify After Evaluation
+If enabled, Autocuts will display a notification banner of the current log entry. This is useful when you are developing and troubleshooting your Autocuts. This feature is only available if you have the Log Activity setting enabled. 
 
 
+
+****
 
 ## Limitations
 Normally, Autocuts will not work unless you are actively using your phone throughout the day. If you want Autocuts to be running 24/7, you should create a shortcut that has a repeat loop calling Autocuts every 60 seconds. You should keep the Shortcuts app open. Switching to another application will likely terminate the shortcut, as Shortcuts in iOS 13 do not run very long on their own in the background.
