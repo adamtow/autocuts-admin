@@ -1,73 +1,35 @@
 
-# Autocuts and the Autocuts Admin
-Autocuts is a background shortcut manager for iOS 13. It runs silently behind the scenes while you use your iOS device throughout the day, intelligently running shortcuts in the background based on triggers such as time, location, web activity and more. Best of all, it executes your shortcuts with absolutely zero tapping of confirmation buttons. 
+# Autocuts
+Autocuts is a background shortcut manager for iOS 13. It runs silently behind the scenes while you use your iOS device throughout the day, intelligently running shortcuts in the background based on triggers such as time, location, web activity and more. Best of all, it executes your shortcuts with absolutely zero tapping on confirmation buttons. 
 
-For those of whom who have wanted Personal Automations in iOS 13 to be a little more, say, automated, Autocuts is the shortcut you need to use!
+For those who have wanted Personal Automations in iOS 13 to be a little more, say, automated, Autocuts is the shortcut you need to use!
 
 ## Requirements, Download and Installation
 
-Autocuts is made up of two primary shortcuts, with two additional shortcuts being critical must-have add-ons you will want to have installed on all of your iOS devices: 
+Autocuts is part of the **Autocuts Suite** set of automation shortcuts for iOS:
+
+[Download Autocuts Suite Installer from RoutineHub.co &raquo;](https://routinehub.co/shortcut/3661)
 
 - **Autocuts**: the background shortcut that runs continually as you use your iOS device via the Open App personal automation feature of Shortcuts in iOS 13.1. 
 - **Autocuts Admin**: the shortcut for creating, viewing, and managing your list of background shortcuts. 
-- **LimitKit**: an event logging and rate limiter for shortcuts. LimitKit allows you to run your shortcuts on a pre-set cadence such as once a minute, five minutes, thirty minutes, hour, week, or more. 
-- **Location Triggers**: shortcut that manages all of your location-based shortcut triggers. 
+- **LimitKit**: an event logging and rate limiter for shortcuts. LimitKit allows you to limit the running of your shortcut to a pre-set cadence (e.g. once a minute, after 15 minutes, after two hours, after one week, etc.).
+- **Location Triggers**: shortcut that manages and runs all of your automatic, location-based shortcut triggers. 
+
+Autocuts Suite requires iOS 13.1 or higher. You will have to allow untrusted shortcuts from Settings &gt; Shortcuts in order to install any of these shortcuts.
 
 ## How it works
-Autocuts takes advantage of the Open App personal automation feature of Shortcuts in iOS 13.1. By using your iOS device like you normally do throughout the day, Autocuts will be constantly running in the background, where it is responsible for running other shortcuts in the background. 
+Autocuts takes advantage of the **Open App** personal automation feature of Shortcuts in iOS 13.1. By using your iOS device like you normally do throughout the day, Autocuts will be constantly running in the background, where it is responsible for running other shortcuts in the background. 
 
 You can also connect third-party web services such as IFTTT, Zapier, and Dropbox directly with your iOS device. A triggered event from the web can create an Autocut file that will automatically run a shortcut on your device. 
 
 You can even deliver Autocut files to other iOS users and run shortcuts remotely on their own devices!
 
-
-### Advanced
-Visit Autocuts Admin's Settings page for additional options for controlling Autocuts.
-
-- Verify Shortcuts: When checked, Autocuts Admin will generate a list of shortcuts that Autocuts will match against when running. If a shortcut does not exist, it will not run.
-- Log Activity: Autocuts will write a log file of its activity on iCloud Drive > Shortcuts > Autocuts > log-{devicename}.txt.
-- Notify After Evaluation: When run, Autocuts will notify you of the Autocuts it ran, skipped, or removed
-
-## What is an Autocut?
-An Autocut is a text file stored on iCloud Drive or Dropbox that instructs Autocuts to run a shortcut automatically while you use your iOS device during the day. Each Autocut has the following properties
-- shortcut: the shortcut to run.\n\n• date: the date and time that an Autocut can first be run.
-- expires: the amount of time in minutes after the scheduled date that an Autocut can still be run. Shortcuts of expired Autocuts will not run. Autocuts can also be set to never expire.
-- device: the name of the iOS device that can run this Autocut. Leave blank to run the Autocut on any device.
-- activate: set to true to open the Shortcuts app before running the Autocut's shortcut. Used for those shortcuts that do not run properly in the background.
-- input: text input that will be sent to an Autocut's shortcut when run.
-
-## Creating Autocuts
-Autocuts can be created in a number of ways. Any shortcut or application that can write to the Shortcuts folder on iCloud Drive or a Dropbox folder can create an Autocut.
-
-Some examples include:
-
-- Autocuts Admin: the shortcut you are using now features an assistant that walks tou step-by-step in creating an Autocut.
-- API: Send the Autocuts Admin a specially-formatted dictionary to create and schedule Autocuts from a third-party shortcut.
-- IFTTT or Zapier: any trigger can write an Autocut text file to an Autocuts Dropbox source folder.
-
-
-## Destination Services        
-Destination services deliver Autocuts to local and remote sources. Autocuts Admin supports the following destination services:
-
-- iCloud Drive: a folder within the Shortcuts folder on iCloud Drive. Make sure to add this folder path as a source if you want Autocuts on this device to process them.
-- Dropbox: A folder on Dropbox where to store your Autocut files. Make sure to add this folder path as a source if you want Autocuts on this device to process them.
-- IFTTT: Requires a Maker Webhooks Event name and API key to send a webhook to IFTTT which should create an Autocut file on Dropbox.
-- Zapier: Requires catch hook URL to send an Autocut to Zapier. The Zap should then create the Autocut file on Dropbox.
-
-## LimitKit
-By default, the Open App personal automation will cause Autocuts to run every time you open one of the selected apps.
-
-LimitKit allows you to control the frequency at which Autocuts will perform its evaluation.
-
-For example, you can configure Autocuts to run every minute, five minutes, thirty minutes, or hour. While it is in-between evaluation periods, Autocuts will exit much more quickly when run from the Open App personal automation.
-
-
+## Getting Started
 In order to run shortcuts automatically in the background, you need to have the Autocuts shortcut installed.
 
-With Autocuts Admin, you can create, manage, and view all shortcuts that are scheduled to run automatically as you use your iOS device throughout the day.Tap Install Autocuts from the Autocuts Admin Home screen to get the latest version of Autocuts.
+With Autocuts Admin, you can create, manage, and view all shortcuts that are scheduled to run automatically as you use your iOS device throughout the day. Tap **Install Autocuts** from the Autocuts Admin Home screen to get the latest version of Autocuts.
 
-## Getting Started
-"To run your shortcuts automatically, Autocuts must be configured to run each time you open your most commonly used apps.
+Next, Autocuts must be configured to run each time you open your most commonly used apps.
 
 1. Tap **Automation** in Shortcuts.
 2. Tap the **+** button.
@@ -93,15 +55,170 @@ Autocuts created by Autocuts Admin or a Destination Service will be processed an
 
 You can limit how often Autocuts performs its evaluation by installing LimitKit and configuring Autocut's LimitKit Interval in Settings.
 
+## What is an Autocut?
+An Autocut is a text file stored on iCloud Drive or Dropbox that instructs Autocuts to run a shortcut automatically while you use your iOS device during the day. Each Autocut has the following properties
+
+- **shortcut**: the shortcut to run.
+- **input**: text input that will be sent to an Autocut's shortcut when run.
+- **date**: the date and time that an Autocut can first be run.
+- **expires**: the amount of time in minutes after the scheduled date that an Autocut can still be run. Shortcuts of expired Autocuts will not run. Autocuts can also be set to never expire.
+- **device**: the name of the iOS device that can run this Autocut. Leave blank to run the Autocut on any device.
+- **activate**: set to true to open the Shortcuts app before running the Autocut's shortcut. Used for those shortcuts that do not run properly in the background.
+- **onSuccess**: what happens to the Autocut after successfully running. You can choose between doing nothing, disabling the Autocut, resetting it, or deleting it.
+-**limitkit**: options for controlling how often the shortcut runs via [LimitKit](#limitkit).
+
+## Creating Autocuts
+Autocuts can be created in a number of ways. Any shortcut or application that can write to the Shortcuts folder on iCloud Drive or a Dropbox folder can create an Autocut.
+
+Some examples include:
+
+- **Autocuts Admin**: the shortcut you are using now features an assistant that walks tou step-by-step in creating an Autocut.
+- **API**: Send the Autocuts Admin a specially-formatted dictionary to create and schedule Autocuts from a third-party shortcut.
+- **IFTTT or Zapier**: any trigger can write an Autocut text file to an Autocuts Dropbox source folder.
+
+### Creating Your First Autocut
+Follow these instructions to create your first Autocut:
+
+1. Open **Autocuts Admin**.
+2. Tap **New Autocut**.
+3. Choose the shortcut you want to run automatically.\
+\
+![Select a shortcut to run with your new Autocut](https://adamtow.github.io/autocuts-admin/images/new-autocut-1.png)\
+\
+&nbsp;
+4. If your shortcut requires input, select what you want to send it when the Autocut runs. If the shortcut supports Autocuts, you can tap **Custom from Shortcut** to be presented with custom UI from the shortcut to be used as input for the shortcut when Autocuts runs.
+5. Decide whether the shortcut can run in the background or if the Shortcuts app needs to be frontmost before running the shortcut.\
+\
+**NOTE**: *Not all shortcuts can run in the background, so please refer to this [section on writing background-aware shortcuts](#background).*\
+\
+![Enter the shortcut input, decide whether it can run in the background, and set the date it can first run](https://adamtow.github.io/autocuts-admin/images/new-autocut-2.png)\
+\
+&nbsp;
+6. Select the date and time when the Autocut will become active.
+7. Set an expiration time for the Autocut or set it to never expire. If you pass the expiration time for an Autocut, its shortcut will never run, and it will be deleted by Autocuts. 
+8. If you have LimitKit installed, you can set the run cadence for your shortcut. While Autocuts will run continuously, you may not want your shortcut to run every time. With LimitKit, you can have your shortcut wait at least X number of seconds, minutes, hours, days, weeks, months, or even years, before it can run again.\
+\
+![Decide whether the AutoCut expires and its LimitKit run interval (optional)](https://adamtow.github.io/autocuts-admin/images/new-autocut-3.png)\
+\
+&nbsp;
+9. Select an action that will occur when the Autocut successfully runs. You can disable the Autocut, reset it, delete it, or do nothing.
+10. Choose whether this Autocut will only run on the iOS device you're currently using, or whether it will run on any iOS device that has the Autocut. You can also specify a custom device name here. Autocuts with a device name restriction will not run on those devices that do not have the name defined in the Autocut.
+11. Name your Autocut. If you leave the name blank, the shortcut name will be display in Autocuts' interface.\
+\
+![Choose what happens after the shortcut runs successfully and restrict the shortcut to run on certain devices](https://adamtow.github.io/autocuts-admin/images/new-autocut-4.png)\
+\
+&nbsp;
+12. Select a destination for your Autocut. You can send Autocuts to remote iOS devices and other users by taking advantage of [Destinations Services](#destinations).
+13. The Autocut will now be completed, and you will be taken to the Autocuts listing page. Tap on the Autocut to view the details that you just entered.
+
+![Choose which destination to create the Autocut in](https://adamtow.github.io/autocuts-admin/images/new-autocut-5.png)
+
+****
+
 ### Sources
 Autocut Sources are folders on iCloud Drive or Dropbox that hold your Autocut files.
 
 When you add a source to Autocuts using Autocuts Admin, any file whose filename begins with "Autocut" or "autocut" will be processed whenever Autocuts runs.
 
-If an Autocut file is valid for the current time and has not expired, the shortcut specified in the Autocut will run.
+#### Allowed Shortcuts
+By default, any shortcut referenced in an Autocut within a source can be run automatically in the background. To restrict which shortcuts can be run from a source, perform the following:
 
-#### ADVANCED
+1. Tap **Sources** from the **Autocuts Admin** Home screen.
+2. Tap **Set Allowed Shortcuts**.
+3. Select the shortcuts you want to restrict only to this source. Don't select anything to allow any shortcut to run from an Autocut.
+4. Tap **Done**.
+
+The names of the shortcuts will appear at the top of the source dialog window.
+
+#### Shared Sources
 Setting up shared Dropbox folders as Autocut sources will allow shortcuts to run automatically on remote iOS devices as their owners use them throughout the day.
+
+****
+
+<span id="services"></span> 
+## Destination Services        
+Destination services deliver Autocuts to local and remote sources. Autocuts Admin supports the following destination services:
+
+- **iCloud Drive**: a folder within the Shortcuts folder on iCloud Drive. Make sure to add this folder path as a source if you want Autocuts on this device to process them.
+- **Dropbox**: A folder on Dropbox where to store your Autocut files. Make sure to add this folder path as a source if you want Autocuts on this device to process them.
+- **IFTTT**: Requires a Maker Webhooks Event name and API key to send a webhook to IFTTT which should create an Autocut file on Dropbox.
+- **Zapier**: Requires catch hook URL to send an Autocut to Zapier. The Zap should then create the Autocut file on Dropbox.
+
+### Zapier
+Any trigger on Zapier can now run shortcuts automatically on your iOS devices with Autocuts. All you need to do is create a file that resides on Dropbox after a triggering event has occurred.
+
+A Zapier destination requires a catch hook url. You create one from within Zapier. Enter that when prompted by Autocuts Admin.
+
+![Choose which destination to create the Autocut in](https://adamtow.github.io/autocuts-admin/images/destination-zapier-1.png)
+
+![Choose which destination to create the Autocut in](https://adamtow.github.io/autocuts-admin/images/destination-zapier-2.png)
+
+### IFTTT
+Any trigger on IFTTT can now run shortcuts automatically on your iOS devices with Autocuts. All you need to do is create a file that resides on Dropbox after a triggering event has occurred.
+
+In the example below, we're creating a Destination Service with IFTTT that makes use of the Maker Events Webhooks app. You'll need a [Maker Webhooks API Key](https://ifttt.com/maker_webhooks).
+
+![Choose which destination to create the Autocut in](https://adamtow.github.io/autocuts-admin/images/destination-ifttt.png)
+
+You will also need the Event Name to send the web hook to.
+
+### Home Automations and Zapier and IFTTT
+If you have an iPad, HomePod, or Apple TV serving as a HomeKit hub in your residence, you can now have them remotely call shortcuts running on your device using Autocuts.
+
+A stripped down version of Shortcuts runs with the Home Automations section of the Home app. One of the supported actions is Get Contents of URL, which is perfect for sending webhook requests to services like IFTTT and Zapier. Here's an example using the Time of Day trigger:
+
+1. Open the **Home** app.
+2. Tap the **Automation** tab.
+3. Tap **New Automation**.
+4. Choose your triggering event. In this case, we'll choose the time of day and set the trigger to occur at 7:00 am.
+5. Tap **Next**.\
+\
+![Setting up an Autocut via Home Automation](https://adamtow.github.io/autocuts-admin/images/home-automation-1.png)\
+&nbsp;
+6. Scroll to the bottom of your rooms and accessories and tap **Convert to Shortcut**.
+7. Remove the first action.
+8. Tap the **+** button.
+9. Enter **Dictionary** in the search field and add the action to the shortcut.
+9. Enter **Get Contents of URL** in the search field and add the **Get Contents of URL** action to your shortcut.
+10. Edit the dictionary so that it matches the Autocut you want to run. For details on the Autocut dictionary format, please refer to [the API section below](#api).\
+```
+{
+		"name": "Morning Routine",
+		"shortcut": "Morning Routine",
+		"expires": 60,
+		"onSuccess": delete,
+		"active: true,
+		"activate": true
+}
+```\
+This specifies an Autocut that runs the Morning Routine shortcut. It deletes itself on success and activates Shortcuts to run in the forehand (because it speaks out the morning details to the user). It also expires in 60 minutes in case the user slept in too much!\
+&nbsp;
+11. Tap **Show More** in the Get Contents of URL action.
+12. Tap Method and choose **POST**.
+13. Tap **JSON** in Request Body.
+14. Tap Add new field and choose Text.
+15. Enter `value1` for the key.
+16. Add the Dictionary variable to value field.
+17. Tap **URL**.
+18. Enter your **IFTTT Webhooks URL**.
+19. Tap **Next**.
+20. It's always a good idea to test that the automation is working, so tap **Test This Automation**. If everything worked properly, the Autocut text file will be created in your Dropbox folder via the IFTTT webhook.
+
+![Using IFTTT to create an Autocut on a Dropbox source](https://adamtow.github.io/autocuts-admin/images/home-automation-2.png)\
+
+Now, at 7:00 am, your HomeKit Hub will send a webhook request to Zapier or IFTTT and add an Autocut to your monitored source folder on Dropbox. At any point between 7:00 am and 8:00 am, all the user has to do is pick up the iOS device and run one of the Open Apps personal automation apps that was assigned to launch Autocuts. [If all goes well](#troubleshooting), the shortcut will run automatically, without the user having to do anything at all!
+
+<span id="limitkit"></span>
+## LimitKit
+By default, the Open App personal automation will cause Autocuts to run every time you open one of the selected apps.
+
+LimitKit allows you to control the frequency at which Autocuts will perform its evaluation.
+
+For example, you can configure Autocuts to run every minute, five minutes, thirty minutes, or hour. While it is in-between evaluation periods, Autocuts will exit much more quickly when run from the Open App personal automation.
+
+
+
+
 
 
 ## Settings
@@ -124,16 +241,51 @@ When enabled, Autocuts will write to a log file, detailing what it does during e
 ### Notify After Evaluation
 If enabled, Autocuts will display a notification banner of the current log entry. This is useful when you are developing and troubleshooting your Autocuts. This feature is only available if you have the Log Activity setting enabled. 
 
+### Use LimitKit
+[LimitKit is an event logging system and rating limiting tool](https://adamtow.github.io/limitkit) for shortcuts. Autocuts takes advantage of LimitKit to prevent itself and other background shortcuts from calling themselves unnecessarily too many times.
 
+When the Open App personal automation is used with multiple apps, iOS will try to launch your shortcut in the background every time you switch to one of the selected applications. If you switch between apps frequently, you can see how this might cause errors and instability with your shortcuts.
+
+LimitKit allows shortcut developers to limit the number of times a shortcut can run its primary function based on intervals of seconds, minutes, hours, days, weeks, months, or even years. 
+
+By enabling LimitKit support in Autocuts, you can not only control how often Autocuts kicks off its evaluation process but also how frequently your Autocut shortcuts run.
+
+#### LimitKit Interval
+Set the interval for how often Autocuts will run in minutes. Use whole numbers, so no negative numbers or fractions.
+
+With or without using LimitKit, the Autocuts shortcut will run during an Open App personal automation. However, the shortcut will exit much more quickly and consume less processing resources if you have enabled LimitKit with a reasonable interval (say 1-5 minutes).
+
+![This Autocut shortcut will run every five minutes.](https://adamtow.github.io/autocuts-admin/images/limitkit-autocut.png)
+
+### Default Expiration Time
+Configure the default expiration time for your Autocuts here. If you miss the window for running an Autocut, it will expire and be removed from your list of Autocuts. 
+
+Set to 0 if you want your Autocuts to never expire.
+
+### Use Default Service with API
+If you use the Autocuts API to create new Autocuts and have multiple destination services defined, a window will appear for each Autocut you create asking you where to send the Autocut. Enabling this setting will cause your Autocuts to be placed using the Default iCloud Destination Service.
+
+### Change Language
+Currently, Autocuts has been localized for the English language, the shortcut is fully ready to be localized. Create your own localization file and submit a pull request on the [Autocuts Admin GitHub page](https://github.com/adamtow/autocuts-admin).
+
+### Check for Update
+Checks for an update to the app via [RoutineHub.co](https://routinehub.co).
+
+### Reset
+Reset Autocuts and Autocuts Admin's settings or erase all information regarding your destination services and sources. 
+
+Erasing content **does not** delete any files in your source folders. So, if you re-add those sources to Autocuts, the Autocuts may reappear. Please visit the source folders directly and delete those files you do not need.
 
 ****
 
+<span id="limitations"></span> 
 ## Limitations
 Normally, Autocuts will not work unless you are actively using your phone throughout the day. If you want Autocuts to be running 24/7, you should create a shortcut that has a repeat loop calling Autocuts every 60 seconds. You should keep the Shortcuts app open. Switching to another application will likely terminate the shortcut, as Shortcuts in iOS 13 do not run very long on their own in the background.
 
+<span id="troubleshooting"></span> 
 ## Troubleshooting
 Shortcut automation in iOS is a new and evolving technology. You may encounter the following issues when using Autocuts.
 
-- **XPC connection to the extension was interrupted**: It could be a temporary error on the part of iOS or one of the shortcuts you are trying to run may have experienced an error.
+- **XPC connection to the extension was interrupted**: It could be a temporary error on the part of iOS or one of the shortcuts you are trying to run may have experienced an error. This error more commonly occurs with Autocuts that have the `activate` flag set to true, meaning they try to switch back to the Shortcuts app in order to operate.
 - **Your shortcuts do not run**: Turn on Use Logs and Notify Activity in Autocuts Admin Settings to see exactly what's happening when Autocuts runs. Run Autocuts from the Shortcuts app and from an Open App automation to see if there's a reproducible difference.
 - **You are offline**: Autocuts does not evaluate Dropbox sources if you are not connected to the internet.
