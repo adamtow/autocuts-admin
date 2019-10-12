@@ -45,6 +45,8 @@ In order to run shortcuts automatically in the background, you must have the Aut
 
 With Autocuts Admin, you can create, manage, and view all shortcuts that are scheduled to run automatically as you use your iOS device throughout the day. Tap **Install Autocuts** from the Autocuts Admin Home screen to get the latest version of Autocuts.
 
+### Creating the Autocut Open App Personal Automation 
+
 Next, Autocuts must be configured to run each time you open your most commonly used apps.
 
 1. Tap **Automation** in Shortcuts.
@@ -65,32 +67,23 @@ Next, Autocuts must be configured to run each time you open your most commonly u
 
 ![Autocuts Setup #3](https://adamtow.github.io/autocuts-admin/images/autocuts-personal-automation-3.png)
 
-Now, whenever you open one of your selected apps, Autocuts will run in the background and evaluate all Autocut files located in monitored iCloud or Dropbox folders. If allowed, the shortcuts referenced by the Autocut files are run automatically. 
+Now, whenever you open one of your selected apps, Autocuts will run in the background and evaluate all Autocut files located in monitored iCloud or Dropbox folders. If allowed, the shortcuts referenced by the Autocut files are run automatically.
 
-By installing [LimitKit](#limitkit), you can control how often Autocuts evaluates and runs individual shortcuts on your device. 
+> The biggest downside to running Autocuts in this fashion is the notification banner that appears each and every time a personal automation is running. This notification banner currently cannot be disabled in any Notification setting on iOS. Hopefully a future version of iOS will allow the user to disable this banner or see the banner turn into some sort of indicator in the status bar. 
 
 ****
 
-## Creating Autocuts
-Autocuts can be created in a number of ways. Any shortcut or application that can write to the Shortcuts folder on iCloud Drive or a Dropbox folder can create an Autocut.
-
-Some examples include:
-
-- **Autocuts Admin**: the shortcut you are using now features an assistant that walks tou step-by-step in creating an Autocut.
-- **API**: Send the Autocuts Admin a specially-formatted dictionary to create and schedule Autocuts from a third-party shortcut.
-- **IFTTT or Zapier**: any trigger can write an Autocut text file to an Autocuts Dropbox source folder.
-
 ### Creating Your First Autocut
-Follow these instructions to create your first Autocut:
+Follow these instructions to create your first shortcut that runs automatically without confirmation:
 
 1. Open **Autocuts Admin**.
 2. Tap **New Autocut**.
 3. Choose the shortcut you want to run automatically. ![Select a shortcut to run with your new Autocut](https://adamtow.github.io/autocuts-admin/images/new-autocut-1.png)
-4. If your shortcut requires input, select what you want to send it when the Autocut runs. If the shortcut supports Autocuts, you can tap **Custom from Shortcut** to be presented with custom UI from the shortcut to be used as input for the shortcut when Autocuts runs.
-5. Decide whether the shortcut can run in the background or if the Shortcuts app needs to be frontmost before running the shortcut. **NOTE**: *Not all shortcuts can run in the background, so please refer to this [section on writing background-aware shortcuts](#background).* ![Enter the shortcut input, decide whether it can run in the background, and set the date it can first run](https://adamtow.github.io/autocuts-admin/images/new-autocut-2.png)
+4. If your shortcut requires input, select what you want to send it when the Autocut runs. If the shortcut fully supports Autocuts, tapping **Custom from Shortcut** may present custom UI from the shortcut to collect the input necessary for the shortcut to run properly.
+5. Decide whether the shortcut can run in the background or if the Shortcuts app needs to be frontmost before running the shortcut. **NOTE**: *Not all shortcuts can run properly in the background, so please refer to this [section on writing background-aware shortcuts](#background).* ![Enter the shortcut input, decide whether it can run in the background, and set the date it can first run](https://adamtow.github.io/autocuts-admin/images/new-autocut-2.png)
 6. Select the date and time when the Autocut will become active.
-7. Set an expiration time for the Autocut or set it to never expire. If you pass the expiration time for an Autocut, its shortcut will never run, and it will be deleted by Autocuts. 
-8. If you have LimitKit installed, you can set the run cadence for your shortcut. While Autocuts will run continuously, you may not want your shortcut to run every time. With LimitKit, you can have your shortcut wait at least X number of seconds, minutes, hours, days, weeks, months, or even years, before it can run again. ![Decide whether the AutoCut expires and its LimitKit run interval (optional)](https://adamtow.github.io/autocuts-admin/images/new-autocut-3.png)
+7. Set an expiration time for the Autocut or set it to never expire. If Autocuts runs across an expired Autocut, it will delete the Autocut and not run its shortcut.
+8. For Autocuts that do not expire and if you have [LimitKit](#limitkit) support enabled, you can set the run cadence for your shortcut. While Autocuts will run continuously, you may not want your shortcut to run every time. With LimitKit, you can have your shortcut wait at least X number of seconds, minutes, hours, days, weeks, months, or even years, before it can run again. ![Decide whether the AutoCut expires and its LimitKit run interval (optional)](https://adamtow.github.io/autocuts-admin/images/new-autocut-3.png)
 9. Select an action that will occur when the Autocut successfully runs. You can disable the Autocut, reset it, delete it, or do nothing.
 10. Choose whether this Autocut will only run on the iOS device you're currently using, or whether it will run on any iOS device that has the Autocut. You can also specify a custom device name here. Autocuts with a device name restriction will not run on those devices that do not have the name defined in the Autocut.
 11. Name your Autocut. If you leave the name blank, the shortcut name will be displayed in Autocuts' interface. ![Choose what happens after the shortcut runs successfully and restrict the shortcut to run on certain devices](https://adamtow.github.io/autocuts-admin/images/new-autocut-4.png)
@@ -276,6 +269,15 @@ An Autocut is a text file stored on iCloud Drive or Dropbox that instructs Autoc
 - **activate**: set to true to open the Shortcuts app before running the Autocut's shortcut. Used for those shortcuts that do not run properly in the background.
 - **onSuccess**: what happens to the Autocut after successfully running. You can choose between doing nothing, disabling the Autocut, resetting it, or deleting it.
 - **limitkit**: options for controlling how often the shortcut can run via [LimitKit](#limitkit).
+
+### Creating Autocuts
+Autocuts can be created in a number of ways. Any shortcut or application that can write to the Shortcuts folder on iCloud Drive or a Dropbox folder can create an Autocut.
+
+Some examples include:
+
+- **Autocuts Admin**: the shortcut you are using now features an assistant that walks tou step-by-step in creating an Autocut.
+- **API**: Send the Autocuts Admin a specially-formatted dictionary to create and schedule Autocuts from a third-party shortcut.
+- **IFTTT or Zapier**: any trigger can write an Autocut text file to an Autocuts Dropbox source folder.
 
 ****
 
