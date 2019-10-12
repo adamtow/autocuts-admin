@@ -1,25 +1,31 @@
 
 # Autocuts
-Autocuts is a background shortcut manager for iOS 13. It runs behind the scenes while you use your iOS device throughout the day, intelligently running shortcuts in the background based on triggers such as time, location, web activity and more. Best of all, it executes these shortcuts without you having to tap on a single confirmation button.
+Autocuts is a background shortcut manager for iOS 13. It runs behind the scenes while you use your iOS device throughout the day, intelligently running shortcuts in the background based on triggers such as time, location, web activity and more. Best of all, Autocuts executes these shortcuts without you having to tap on a single confirmation button.
 
 For those of you who have wanted Personal Automations in iOS 13 to be a little more, say, automated, Autocuts is a must-have addition to your shortcut collection!
 
-## Requirements, Download and Installation
+## Download
 Autocuts is part of the **Autocuts Suite** set of automation shortcuts for iOS:
 
 [Download Autocuts Suite Installer from RoutineHub.co &raquo;](https://routinehub.co/shortcut/3661)
 
-- **Autocuts**: the background shortcut manager that runs continually as you use your iOS device via the Open App personal automation feature of Shortcuts on iOS 13.1 and greater.
+- **Autocuts**: the shortcut manager that runs your shortcuts continually in the background throughout the day.
 - **Autocuts Admin**: the shortcut for creating, viewing, and managing your list of background shortcuts. 
 - **Location Triggers**: shortcut that manages and runs all of your automatic, location-based shortcut triggers. 
-- **LimitKit**: an event logging and rate limiter for shortcuts. LimitKit allows you to set the run cadence of your shortcuts to a pre-set value (e.g. once a minute, after 15 minutes, after two hours, after one week, etc.).
+- **LimitKit**: an event logging and rate limiter for shortcuts. LimitKit allows you to set the run cadence of your shortcuts (e.g. one minute, fifteen minutes, two hours, three weeks, etc.).
 
 ### System Requirements
 - Autocuts Suite requires iOS 13.1 or higher.
 - You must allow untrusted shortcuts from Settings &gt; Shortcuts in order to install any third-party shortcut such as Autocuts.
+- Autocuts needs access to the following:
+	- iCloud Drive
+	- Notifications
+	- Dropbox
+	- Location
+	- Contacts (for the pretty menus throughout the applications)
 
-## How it works
-Autocuts takes advantage of the **Open App** personal automation feature of Shortcuts in iOS 13.1. Simply using your iOS device normally during the day is enough to keep Autocuts constnatly running and continually monitoring for shortcuts that it needs to run in the background.
+## How Autocuts Works
+Autocuts takes advantage of the **Open App** personal automation feature of Shortcuts in iOS 13.1. Simply using your iOS device normally during the day is enough to keep Autocuts constantly running and continually monitoring for shortcuts that it needs to run in the background.
 
 You can also connect third-party web services such as IFTTT, Zapier, and Dropbox directly with your iOS device. A triggered event from the web can create an Autocut file that will automatically run a shortcut on your device. 
 
@@ -277,9 +283,14 @@ Erasing content **does not** delete any files in your source folders. So, if you
 
 ****
 
-<span id="limitations"></span> 
-## Limitations
-Normally, Autocuts will not work unless you are actively using your phone throughout the day. If you want Autocuts to be running 24/7, you should create a shortcut that has a repeat loop calling Autocuts every 60 seconds. You should keep the Shortcuts app open. Switching to another application will likely terminate the shortcut, as Shortcuts in iOS 13 do not run very long on their own in the background.
+<span id="faq"></span> 
+## Frequently Asked Questions
+
+### If I go to sleep, will Autocuts keep running my shortcuts in the background?
+
+The short answer is no. The trigger for Autocuts to run is you have to use your iPhone and opens apps that are tied to the Open App personal automation that runs Autocuts. If you are not using your iOS device, Autocuts won't be triggered.
+
+The long answer is maybe. If you want Autocuts while you're asleep, consider creating a shortcut that calls Autocuts every 60 seconds or so. You should keep the Shortcuts app open. Switching to another application will likely remove or suspend Shortcuts from memory. Your shortcut may want to lower the brightness of the display and 
 
 <span id="troubleshooting"></span> 
 ## Troubleshooting
