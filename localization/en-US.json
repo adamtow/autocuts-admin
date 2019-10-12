@@ -52,6 +52,8 @@
         "label_date": "Date",
         "label_date_anytime": "Anytime",
         "label_date_created": "Created",
+        "label_date_never": "Never",
+        "label_date_lastRun": "Last Run:",
         "label_device": "Device",
         "label_expiration": "Expires After",
         "label_expiration_never": "Never",
