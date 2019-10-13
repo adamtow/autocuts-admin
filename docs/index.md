@@ -245,6 +245,8 @@ Run shortcuts automatically when you arrive or leave locations with [Location Tr
 ### Auto DND
 [Auto DND](https://adamtow.github.io/auto-dnd) turns on Do Not Disturb automatically if you have calendar events with the string `DND` in the Title or Notes field. 
 
+### Auto Low Power Mode
+
 ### Home Automations with Zapier and IFTTT
 If you have an iPad, HomePod, or Apple TV serving as a HomeKit hub in your residence, you can now have them remotely call shortcuts running on your device using Autocuts.
 
