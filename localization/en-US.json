@@ -26,6 +26,7 @@
         "alert_help_troubleshooting": "Shortcut automation in iOS is a new and evolving technology. You may encounter the following issues when using Autocuts.\n\n• XPC connection to the extension was interrupted: It could be a temporary error on the part of iOS or one of the shortcuts you are trying to run may have experienced an error.\n\n• Your shortcuts do not run. Turn on Use Logs and Notify Activity in Autocuts Admin Settings to see exactly what's happening when Autocuts runs. Run Autocuts from the Shortcuts app and from an Open App automation to see if there's a reproducible difference.\n\n• You are offline: Autocuts does not evaluate Dropbox sources if you are not connected to the internet.\n\nRead the full documentation for more troubleshooting tips and tricks.",
         "alert_help_troubleshooting_title": "Troubleshooting",
         "alert_install": "Download the latest version of the Autocuts shortcut. This is required to run your shortcuts automatically in the background as you use your iOS device.",
+        "alert_localization": "Want to see Autocuts localized for your native language?\n\nVisit Autocut Admin's localization page on GitHub and submit a pull request.",
         "alert_schedule": "The Autocut running the shortcut '{{shortcut}}' was scheduled using the {{service}} destination service.",
         "alert_schedule_title": "Autocut Created and Scheduled",
         "alert_source_shortcutsNone": "There are no allowed shortcuts defined for this source.",
