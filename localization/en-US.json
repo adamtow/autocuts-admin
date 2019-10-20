@@ -233,6 +233,7 @@
         "menu_settings_limitkit": "Use LimitKit",
         "menu_settings_limitkitInterval": "Run Interval…",
         "menu_settings_log": "Log Activity",
+        "menu_settings_logView": "View Logs…",
         "menu_settings_notify": "Notifications…",
         "menu_settings_reset": "Reset…",
         "menu_settings_serviceAPI": "Use Default Service with API",
