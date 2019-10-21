@@ -96,7 +96,7 @@
         "label_notify_middle_description": "Only if there are shortcuts to run",
         "label_notify_end": "End of evaluation",
         "label_notify_intervalReminder": "During repeat interval",
-        "label_notify_intervalReminder_description": "Tap link in banner to run Autocuts manually.",
+        "label_notify_intervalReminder_description": "Tap notification link to run manually",
         "label_onSuccess_delete": "Delete",
         "label_onSuccess_disable": "Disable",
         "label_onSuccess_nothing": "Nothing",
