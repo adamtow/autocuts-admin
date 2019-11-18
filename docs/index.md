@@ -28,14 +28,6 @@ Autocuts is part of the **Autocuts Suite** set of automation shortcuts for iOS f
 
 ****
 
-## Table of Contents
-
-- Why Autocuts
-- Getting Started
-- 
-
-****
-
 ## Why Autocuts?
 Personal Automations in iOS 13 continues the progress made by Workflow and Shortcuts in iOS 12 to bring powerful, user-friendly automation tools to iOS. A number of the triggers, however, share a common weakness; they require the user to tap on a confirmation button to actually run a shortcut.
 
@@ -56,6 +48,9 @@ With Autocuts Admin, you can create, manage, and view all shortcuts that are sch
 ### Creating the Autocut Open App Personal Automation 
 
 Next, Autocuts must be configured to run each time you open your most commonly used apps.
+
+[![](https://adamtow.github.io/autocuts-admin/images/autocuts-open-app.png)](https://youtu.be/M7tR4iExnNA)
+Watch a [video tutorial on how to configure an Open App personal automation](https://youtu.be/M7tR4iExnNA) to run Autocuts.
 
 1. Tap **Automation** in Shortcuts.
 2. Tap the **+** button.
